@@ -1,0 +1,103 @@
+PRIME MRBS VER. 1.1.0.0 (07/13/2021)
+ - Barcode and QRcode will save white spaces AFTER the billno, based on its required length of 10
+ - Fixed fetching of the address in the SOA
+ - Camera app automatically opens when reading is high, low, or averaged
+ - telno1 and telno2 will be left blank if these fields are fetched as null from the database
+ - Number of tries increased from 2 to 3
+ - Number of tries message box updated
+ - Added number of prints field in the database
+ - Application can now count the number of prints. maximum number of prints is 3
+ - Application will not allow printing of SOA for consumers if number of prints is reached
+
+PRIME MRBS VER. 1.1.0.1 (07/23/2021)
+ - If present reading is less than the previous reading, application will require user to capture image
+ - If present reading is the same as the previous reading, application will require user to capture image
+ - If present reading is the same as the previous reading, application will trigger it as low consumption and will print consumer notice
+ - Application will require user to capture image after the input of field findings if there is no present reading
+ - consumers with only field findings with no reading will be treated as READ
+ - Averaging removed. Averaging will only happen when present reading is less than previous reading only
+ - Added printing of read reports
+ - Manual input of remarks are now being loaded
+
+PRIME MRBS VER. 1.1.0.2 (07/30/2021)
+ - Field findings and remarks of consumers will load in the field findings and remarks form
+ - User can navigate through next and previous unread customer
+ - For same reading, if customer has average reading, customer will be flagged as low reading and will print notice. If customer has zero average, customer will be flagged as normal reading and will print SOA. consumption will always be zero for same reading
+
+PRIME MRBS VER. 1.1.0.3 (07/30/2021)
+ - Physical and On-screen keyboard will navigate through previous, previous unread, next unread, and next records
+	left / Big left on-screen    = prev
+	right / Big right on-screen  = next
+	up / small left on-screen    = prev unread
+	down / small right on-screen = next unread
+ - To navigate to first and last record, the navigate function can be found in the menu
+ - Print read master list fixed
+
+PRIME MRBS VER. 1.1.0.4 (08/04/2021)
+ - SOA logo is based on logo.bmp located in the databases folder
+ - Added printing read summary of 1 - 100, 101 - 200, 201 and up
+
+PRIME MRBS VER. 1.1.0.5 (08/05/2021)
+ - Read reports will include FF code
+ - null values will not be printed in read reports
+
+PRIME MRBS VER. 1.1.0.6 (08/06/2021)
+ - Removed databinding of Others11 to Others20 fields programmatically
+
+PRIME MRBS VER. 1.1.0.7 (08/17/2021)
+ - Added Old account number to display in MRBS screen (seen beside the account number)
+ - Date and time is displayed in the login screen
+ - ATM ref number is 14 digits. Removed 4 digit duedate
+ - Record summary displays book number, active/inactive, due date, new accounts
+ - User can now search for the old account number of consumers
+ - Values in the SOA are fixed to two decimals
+ - Cubic Meter Consumption is a whole number
+ - Font colors of Consumer Info will be BLACK for ACTIVE, RED for INACTIVE, GREEN for NEW
+ - Added "ADD NEW METER" function
+
+PRIME MRBS VER. 1.1.0.8 (08/26/2021)
+ - Searching for account number will automatically show on-screen keyboard
+ - Water rates is now based on Rate Code and Bill Type
+
+PRIME MRBS VER. 1.1.0.9 (09/10/2021)
+ - Fixed computation of Other Charges
+
+PRIME MRBS VER. 1.1.1.0 (10/01/2021)
+ - EVAT flag changed from TRUE to 1
+ - EVAT printing and conditioning updated
+
+PRIME MRBS VER. 1.1.1.1 (10/06/2021)
+ - Added additional column in FORREAD table for AfterDue printing. If value is 0, After Due will not be printed in the SOA. Else if 1, After Due will be printed.
+ - Added condition for the notification of consumers that are not for billing. If consumer noofdays field is less than 30 and with less than 10 cubic, consumer will only be saved as READ but with no cubic, reading, computation, and SOA.
+
+PRIME MRBS VER. 1.1.1.2 (10/25/2021)
+ - Old customer number will not print in the SOA if data of this is blank
+
+PRIME MRBS VER. 1.1.1.3 (10/28/2021)
+ - Other charges or any charge with zero value will print as "0.00"
+
+PRIME MRBS VER. 1.1.1.4 (11/19/2021)
+ - Added GPSHLOC field in the database. the current GPS location will be saved in this field when the user clicks on the "Save GPS location" from the menu of the AMRBS program.
+ - Cleared the "no device paired" from bluetooth device list to avoid errors.
+
+PRIME MRBS VER. 1.1.1.5 (11/29/2021)
+ - Edited logo.bmp to be more centered
+ - senior citizen computation added and tested
+ - Senior citizen is negative in the SOA
+ - Last bill moved to OTHER CHARGES group
+ - Additional QR CODE added a the bottom of the SOA with description
+ - Added "NOTICE OF DISCONNECTION" remarks in the SOA if mosarr > 0 nad last bill is > 0
+ - Removed decimal points of the CuM in the SOA
+
+PRIME MRBS VER. 1.1.1.6 (12/02/2021)
+ - Saving GPS location will not be allowed if GPS is loading or disabled
+ - If consumer has existing GPS, application will ask if user will replace existing GPS
+ - Added GPS tagged information at the bottom of the navigation buttons
+
+PRIME MRBS VER. 1.1.1.7 (12/03/2021)
+ - Removed database closing during calling of sql queries. closing is now done only through synchronized closing.
+ - Added cursor data refreshing during saving of GPS location
+
+PRIME MRBS VER. 1.1.1.8 (12/28/2021)
+ - Added 6 Months Billing Consumption to the SOA printout
+ - Billing months will be counting from current Billing Month

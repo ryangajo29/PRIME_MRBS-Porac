@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/my_scrollview"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="122dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/cardview_bg">
+
+            <LinearLayout
+                android:layout_width="360dp"
+                android:layout_height="22dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tag_acctno"
+                    android:layout_width="50dp"
+                    android:layout_height="28dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="Accnt  :"
+                    android:textColor="@color/colorLightGray"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/TV_ffacctno"
+                    android:layout_width="130dp"
+                    android:layout_height="28dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="12-1901-12"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold"
+                    android:textSize="18dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="360dp"
+                android:layout_height="52dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tag_name"
+                    android:layout_width="50dp"
+                    android:layout_height="28dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="Name  :"
+                    android:textColor="@color/colorLightGray"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/TV_ffname"
+                    android:layout_width="240dp"
+                    android:layout_height="52dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="JESTER CARLO PINEDA RODRIGUEZ"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="380dp"
+                android:layout_height="28dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tag_mtrno"
+                    android:layout_width="50dp"
+                    android:layout_height="28dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="Meter  :"
+                    android:textColor="@color/colorLightGray"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/TV_ffmtrno"
+                    android:layout_width="130dp"
+                    android:layout_height="28dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="2199001"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold"
+                    android:textSize="18dp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:text="Select Field Findings:"
+            android:textColor="@color/colorBlack"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+        <Spinner
+            android:id="@+id/ff_spinner"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:drawSelectorOnTop="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:text="Remarks (Manually input if required) :"
+            android:textColor="@color/colorBlack"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/ET_ffremarks"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textColor="@color/colorGray"
+            android:textSize="18dp"
+            android:inputType="text"
+            android:maxLines="1"/>
+        <TextView
+            android:id="@+id/TV_ffPos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+    </LinearLayout>
+</ScrollView>

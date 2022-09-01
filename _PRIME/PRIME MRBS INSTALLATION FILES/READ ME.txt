@@ -1,0 +1,4 @@
+1. The "databases" folder contains the application database. this folder should be placed in the devices ROOT FOLDER
+2. The "PRIME_MRBS_INSTALLER" is the installer file for the MRBS program. just place it anywhere in the device, and click to install it.
+3. If error occurs when opening the PRIME MRBS application, it would mean that the application is not given access to the database storage. to give access, go to "settings > application", click on "PRIME_MRBS", go to "permissions", and allow permissions on the location, camera, and storage.
+4. Copy the "MRBS_images" folder. This is just an empty folder but this folder is required to be in the root directory of the device because this is where the pictures are going to be saved.

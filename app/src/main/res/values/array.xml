@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string-array name="SearchItems">
+    <item>Meter No.</item>
+    <item>Account No.</item>
+    <item>Old Account No.</item>
+    <item>Name</item>
+    <item>Unread</item>
+  </string-array>
+  <string-array name="LoaderItems">
+    <item>All</item>
+    <item>Unread</item>
+    <item>Read</item>
+  </string-array>
+  <string-array name="SearchItemsCol">
+    <item>Meter No.</item>
+    <item>Account No.</item>
+    <item>Old Account No.</item>
+    <item>Name</item>
+    <item>Not Collected</item>
+  </string-array>
+</resources>

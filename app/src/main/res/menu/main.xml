@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/search"
+        android:title="Search"
+        android:icon="@drawable/ic_search"
+        android:orderInCategory="100"
+        app:showAsAction="always" />
+    <item android:id="@+id/action"
+        android:title="Edit"
+        android:icon="@drawable/ic_menu"
+        android:orderInCategory="100"
+        app:showAsAction="always">
+        <menu>
+            <item android:id="@+id/camera"
+                android:title="Capture photo"/>
+            <item android:id="@+id/inputfindings"
+                  android:title="Input Findings"/>
+            <!--<item android:id="@+id/printonly"
+                android:title="Print Statement"/>-->
+            <item android:id="@+id/printread"
+                android:title="Print Read Master List">
+                <menu>
+                    <item
+                        android:id="@+id/sub1to100"
+                        android:title="1 to 100" />
+                    <item
+                        android:id="@+id/sub101to200"
+                        android:title="101 to 200" />
+                    <item
+                        android:id="@+id/sub200above"
+                        android:title="200 above" />
+                    <item
+                        android:id="@+id/suballread"
+                        android:title="All Read" />
+                </menu>
+            </item>
+            <item android:id="@+id/navigate"
+                android:title="Navigate..">
+                <menu>
+                    <item
+                        android:id="@+id/prevunread"
+                        android:title="First Record" />
+                    <item
+                        android:id="@+id/nextunread"
+                        android:title="Last Record" />
+                </menu>
+            </item>
+            <item android:id="@+id/addnewmtr"
+                android:title="Add New Meter"/>
+            <item android:id="@+id/statistics"
+                  android:title="Record Summary"/>
+        </menu>
+    </item>
+</menu>
